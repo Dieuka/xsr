@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meyem Dentikid - Xịt Răng Miệng Chống Sâu Răng Cho Bé Từ 1 Tuổi</title>
+<meta name="description" content="Meyem Dentikid - xịt răng miệng chống sâu răng cho bé từ 1 tuổi. Xylitol, Postbiotic, NaF. Không cay, không cồn, hương nho tự nhiên, bảo vệ răng sữa mỗi ngày.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --blue:#2b8ad4;--blue-dark:#1a6bb0;--mint:#4fc3c0;
+  --orange:#ff7a2f;--red:#e63946;--green:#39b54a;
+  --ink:#223040;--muted:#6b7a8d;--bg:#eef6fb;--card:#fff;
+}
+body{font-family:'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:16px}
+img{max-width:100%;display:block}
+.wrap{max-width:520px;margin:0 auto;background:#fff;min-height:100vh;position:relative;box-shadow:0 0 40px rgba(0,0,0,.08)}
+.pad{padding:0 16px}
+/* BANDS – nền phân vùng tách biệt từng khối */
+.band{padding:6px 16px 26px}
+.band-prob{background:#fff4f1}
+.band-sol{background:#ffffff}
+.band-cmp{background:#eaf4fc}
+.band-ing{background:#eefaf4}
+.band-info{background:#ffffff}
+.band-use{background:#eaf4fc}
+.band-video{background:linear-gradient(160deg,#1a6bb0,#2b8ad4)}
+.band-combo{background:#fff7ef}
+.band-urgency{background:#ffffff}
+.band-review{background:#f3f9fd}
+.band + .band{border-top:1px solid rgba(0,0,0,.04)}
+h2.sec{font-size:22px;text-align:center;margin:28px 0 6px;color:var(--blue-dark);font-weight:800;line-height:1.3}
+h2.sec span{color:var(--orange)}
+.sub{text-align:center;color:var(--muted);margin-bottom:16px;font-size:15px}
+.btn{display:block;width:100%;border:none;border-radius:50px;padding:16px;font-size:19px;font-weight:800;color:#fff;cursor:pointer;text-align:center;text-decoration:none;box-shadow:0 6px 16px rgba(255,122,47,.4);animation:pulse 1.6s infinite}
+.btn-cta{background:linear-gradient(90deg,#ff8a3d,#ff5e2f)}
+@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.03)}100%{transform:scale(1)}}
+
+/* HERO */
+.hero{background:linear-gradient(160deg,#eaf6ff,#d4ecfb);padding:22px 16px 26px;text-align:center}
+.hero .badge-top{display:inline-block;background:var(--red);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px}
+.badge-row{display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:10px}
+.badge-row .brand-logo{height:38px;width:auto;object-fit:contain}
+.badge-row .brand-txt{font-size:17px;font-weight:800;color:var(--green)}
+.badge-row .brand-txt b{color:var(--blue)}
+.hero h1{font-size:27px;font-weight:900;color:var(--blue-dark);line-height:1.25;margin-bottom:8px}
+.hero h1 span{color:var(--orange)}
+.hero .tag{color:var(--mint);font-weight:700;font-size:16px;margin-bottom:14px}
+.hero-img{border-radius:16px;overflow:hidden;margin:12px 0;background:#fff;box-shadow:0 8px 20px rgba(0,0,0,.1);position:relative}
+.slider{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.slider::-webkit-scrollbar{display:none}
+.slide{flex:0 0 100%;scroll-snap-align:center}
+.slide img{width:100%;display:block}
+.dots{display:flex;gap:7px;justify-content:center;position:absolute;left:0;right:0;bottom:10px}
+.dots span{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.6);box-shadow:0 1px 3px rgba(0,0,0,.3);transition:.25s;cursor:pointer}
+.dots span.on{background:#fff;width:20px;border-radius:4px}
+.slider{cursor:grab}
+.slider.dragging{cursor:grabbing}
+.slider.dragging{scroll-behavior:auto}
+.nav{position:absolute;top:50%;transform:translateY(-50%);width:36px;height:36px;border:none;border-radius:50%;background:rgba(255,255,255,.85);color:var(--blue-dark);font-size:24px;line-height:1;font-weight:700;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.2);display:flex;align-items:center;justify-content:center;z-index:3}
+.nav.prev{left:8px}
+.nav.next{right:8px}
+.nav:active{background:#fff}
+.price-box{margin:14px 0}
+.price-old{color:var(--muted);text-decoration:line-through;font-size:17px;margin-right:8px}
+.price-new{color:var(--red);font-size:34px;font-weight:900}
+.price-off{display:inline-block;background:var(--red);color:#fff;font-size:13px;font-weight:700;padding:2px 10px;border-radius:6px;vertical-align:middle;margin-left:6px}
+
+/* SOCIAL PROOF */
+.proof{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;background:#fff7ef;padding:12px;margin:0;border-top:1px dashed #ffd4b3;border-bottom:1px dashed #ffd4b3}
+.proof .item{text-align:center}
+.proof .num{font-size:20px;font-weight:900;color:var(--orange)}
+.proof .lbl{font-size:12px;color:var(--muted)}
+.stars{color:#ffb400;font-size:18px}
+
+/* PROBLEM */
+.prob-list{list-style:none;margin:10px 0}
+.prob-list li{background:#fff;border:1px solid #ffe0e0;border-left:4px solid var(--red);border-radius:10px;padding:12px 14px;margin-bottom:10px;font-size:15px}
+.prob-list li b{color:var(--red)}
+
+/* COMPARE */
+.cmp{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px;border-radius:12px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,.06)}
+.cmp th{background:var(--blue);color:#fff;padding:10px;font-size:14px}
+.cmp td{padding:10px;border-bottom:1px solid #eef2f6;text-align:center}
+.cmp td:first-child{text-align:left;font-weight:600}
+.cmp .yes{color:var(--green);font-weight:800}
+.cmp .no{color:var(--red);font-weight:800}
+.cmp tr:nth-child(even){background:#f7fbfe}
+
+/* FEATURE CARDS */
+.feats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0}
+.feat{background:#fff;border-radius:14px;padding:16px 12px;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,.06);border:1px solid #eaf2f8}
+.feat .ic{font-size:34px;margin-bottom:6px}
+.feat .t{font-weight:800;color:var(--blue-dark);font-size:15px;margin-bottom:4px}
+.feat .d{font-size:13px;color:var(--muted)}
+
+/* INFO BLOCK */
+.info{background:#f3f9fd;border-radius:14px;padding:16px;margin:12px 0;font-size:15px}
+.info .row{display:flex;padding:7px 0;border-bottom:1px dashed #d6e6f2}
+.info .row:last-child{border:none}
+.info .k{font-weight:700;color:var(--blue-dark);min-width:120px}
+
+/* COMBO */
+.combo{background:#fff;border:2px solid #e3eef7;border-radius:16px;padding:16px;margin-bottom:12px;position:relative}
+.combo.hot{border-color:var(--orange);box-shadow:0 8px 20px rgba(255,122,47,.18)}
+.combo .flag{position:absolute;top:-11px;left:16px;background:var(--orange);color:#fff;font-size:12px;font-weight:700;padding:3px 12px;border-radius:20px}
+.combo h3{color:var(--blue-dark);font-size:18px;margin-bottom:4px}
+.combo .cp{font-size:15px;margin:6px 0}
+.combo .cp .n{color:var(--red);font-weight:900;font-size:24px}
+.combo .cp .o{color:var(--muted);text-decoration:line-through;margin-left:6px;font-size:15px}
+.combo ul{list-style:none;font-size:14px;margin:8px 0;color:var(--muted)}
+.combo ul li:before{content:"✓ ";color:var(--green);font-weight:900}
+
+/* COUNTDOWN */
+.cd-wrap{background:linear-gradient(90deg,#1a6bb0,#2b8ad4);color:#fff;text-align:center;padding:18px 16px;margin:16px 0;border-radius:14px}
+.cd-wrap .ttl{font-weight:700;margin-bottom:10px;font-size:16px}
+.cd{display:flex;justify-content:center;gap:8px}
+.cd .u{background:#fff;color:var(--blue-dark);border-radius:10px;padding:8px 0;min-width:58px}
+.cd .u b{font-size:26px;display:block;font-weight:900}
+.cd .u span{font-size:11px;color:var(--muted)}
+.scarce{text-align:center;color:var(--red);font-weight:700;margin:10px 0;font-size:15px}
+
+/* GUARANTEE */
+.guar{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0}
+.guar .g{background:#eefaf0;border:1px solid #cdeed3;border-radius:12px;padding:12px;text-align:center}
+.guar .g .ic{font-size:28px}
+.guar .g .t{font-weight:700;font-size:13px;color:#2a7d3a;margin-top:4px}
+
+/* REVIEWS */
+.rv-sum{text-align:center;background:#fff7ef;border-radius:14px;padding:16px;margin:12px 0}
+.rv-sum .big{font-size:40px;font-weight:900;color:var(--orange)}
+.rev{background:#fff;border:1px solid #eef2f6;border-radius:12px;padding:14px;margin-bottom:10px}
+.rev .top{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.rev .av{width:40px;height:40px;border-radius:50%;background:var(--mint);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800}
+.rev .nm{font-weight:700;font-size:14px}
+.rev .tm{font-size:12px;color:var(--muted)}
+.rev .tx{font-size:14px;color:#44525f}
+.rev .tags{margin-top:6px;font-size:12px;color:var(--green)}
+
+/* VIDEO REVIEW */
+.band-video h2.sec{color:#fff}
+.band-video h2.sec span{color:#ffd27a}
+.band-video .sub{color:#d6ecfb}
+.video-box{border-radius:16px;overflow:hidden;background:#000;box-shadow:0 10px 28px rgba(0,0,0,.3);margin:14px 0}
+.video-box video{width:100%;display:block;background:#000}
+.video-cap{text-align:center;color:#d6ecfb;font-size:13px;margin-top:4px}
+
+/* FORM */
+.form-sec{background:linear-gradient(160deg,#2b8ad4,#1a6bb0);padding:24px 16px;border-radius:16px;margin:16px 0}
+.form-sec h2{color:#fff;text-align:center;font-size:22px;margin-bottom:4px}
+.form-sec .fs-sub{color:#d6ecfb;text-align:center;font-size:14px;margin-bottom:16px}
+.form-sec input,.form-sec select,.form-sec textarea{width:100%;border:none;border-radius:10px;padding:14px;font-size:16px;margin-bottom:10px;font-family:inherit}
+.form-sec textarea{resize:vertical;min-height:60px}
+.form-note{color:#d6ecfb;font-size:12px;text-align:center;margin-top:8px}
+.ok-msg{display:none;background:#eefaf0;border:2px solid var(--green);border-radius:14px;padding:20px;text-align:center;margin:16px 0}
+.ok-msg .ic{font-size:48px}
+.ok-msg h3{color:var(--green);margin:8px 0}
+
+/* FOOTER */
+.foot{background:#223040;color:#b9c6d4;padding:24px 16px 110px;font-size:13px;text-align:center}
+.foot h4{color:#fff;margin-bottom:6px}
+.foot a{color:#8fc5ef;text-decoration:none}
+.foot .links{margin-top:10px;display:flex;flex-wrap:wrap;gap:8px 16px;justify-content:center}
+
+/* FLOATING */
+.float-bar{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:520px;display:flex;gap:8px;padding:8px 10px;background:#fff;box-shadow:0 -4px 16px rgba(0,0,0,.12);z-index:50}
+.float-bar a{flex:1;border-radius:50px;padding:13px 4px;text-align:center;color:#fff;font-weight:800;text-decoration:none;font-size:15px}
+.fb-call{background:var(--green)}
+.fb-zalo{background:var(--blue)}
+.fb-order{background:linear-gradient(90deg,#ff8a3d,#ff5e2f);flex:1.4}
+.float-side{position:fixed;right:10px;bottom:76px;z-index:49;display:flex;flex-direction:column;gap:10px}
+.float-side a{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:24px;box-shadow:0 4px 12px rgba(0,0,0,.25);text-decoration:none}
+.fs-call{background:var(--green);animation:pulse 1.4s infinite}
+.fs-zalo{background:var(--blue)}
+.fs-mess{background:#0084ff}
+@media(min-width:521px){.float-side{right:calc(50% - 260px + 10px)}}
+.ph-img{background:repeating-linear-gradient(45deg,#dbe9f4,#dbe9f4 12px,#e9f3fb 12px,#e9f3fb 24px);display:flex;align-items:center;justify-content:center;color:#7fa8c9;font-size:14px;font-weight:600;min-height:220px;text-align:center;padding:20px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="badge-row">
+      <img class="brand-logo" src="img/logo.png" alt="GreenCare"
+           onerror="this.outerHTML='&lt;span class=\'brand-txt\'&gt;Green&lt;b&gt;Care&lt;/b&gt;&lt;/span&gt;'">
+      <span class="badge-top">🔥 ĐANG BÁN CHẠY #1</span>
+    </div>
+    <h1>Meyem <span>Dentikid</span></h1>
+    <div class="tag">Xịt răng miệng chống sâu răng • Cho bé từ 1 tuổi</div>
+    <div class="hero-img">
+      <div class="slider" id="heroSlider"></div>
+      <button class="nav prev" id="heroPrev" type="button" aria-label="Ảnh trước">‹</button>
+      <button class="nav next" id="heroNext" type="button" aria-label="Ảnh sau">›</button>
+      <div class="dots" id="heroDots"></div>
+    </div>
+    <div class="price-box">
+      <span class="price-old">200.000đ</span>
+      <span class="price-new">139.000đ</span>
+      <span class="price-off">-30% OFF</span>
+    </div>
+    <a href="#order" class="btn btn-cta">🛒 ĐẶT MUA NGAY</a>
+  </section>
+
+  <!-- SOCIAL PROOF -->
+  <section class="proof">
+    <div class="item"><div class="num">4.9/5</div><div class="stars">★★★★★</div></div>
+    <div class="item"><div class="num">1500+</div><div class="lbl">Đã bán</div></div>
+    <div class="item"><div class="num">1000+</div><div class="lbl">Mẹ tin dùng</div></div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section class="band band-prob">
+    <h2 class="sec">Mẹ có đang <span>lo lắng</span>?</h2>
+    <p class="sub">Những nỗi lo quen thuộc của bố mẹ có con nhỏ</p>
+    <ul class="prob-list">
+      <li>😣 Bé <b>lười đánh răng</b>, cứ đến giờ là khóc, trốn, ngậm bàn chải.</li>
+      <li>🍭 Bé <b>mê đồ ngọt, bánh kẹo</b> — men răng dễ bị bào mòn, sâu răng sớm.</li>
+      <li>🦷 Răng bé <b>xuất hiện đốm đen, ố vàng</b>, hơi thở có mùi.</li>
+      <li>💊 Kem đánh răng người lớn <b>quá cay</b>, bé nuốt phải lại không an toàn.</li>
+    </ul>
+  </section>
+
+  <!-- SOLUTION / FEATURES -->
+  <section class="band band-sol">
+    <h2 class="sec">Giải pháp <span>dịu nhẹ</span> cho răng bé</h2>
+    <p class="sub">Chỉ cần xịt, tiện lợi - không cần súc lại, bé hợp tác, mẹ an tâm</p>
+    <div class="feats">
+      <div class="feat"><div class="ic">🦷</div><div class="t">Chống sâu răng</div><div class="d">Xylitol &amp; NaF hỗ trợ ngừa sâu răng cho trẻ từ 1 tuổi</div></div>
+      <div class="feat"><div class="ic">✨</div><div class="t">Ngừa mảng bám</div><div class="d">Hỗ trợ hạn chế mảng bám, giảm hôi miệng</div></div>
+      <div class="feat"><div class="ic">🍇</div><div class="t">Hương nho tự nhiên</div><div class="d">Thơm ngon, dễ chịu, bé thích</div></div>
+      <div class="feat"><div class="ic">👶</div><div class="t">An toàn cho bé</div><div class="d">Không cay, không cồn, dùng được hằng ngày</div></div>
+    </div>
+  </section>
+
+  <!-- COMPARE -->
+  <section class="band band-cmp">
+    <h2 class="sec">Vì sao chọn <span>Xịt</span> thay vì cách khác?</h2>
+    <table class="cmp">
+      <tr><th>Tiêu chí</th><th>Xịt của bé</th><th>Cách thường</th></tr>
+      <tr><td>Bé hợp tác, không khóc</td><td class="yes">✓</td><td class="no">✕</td></tr>
+      <tr><td>Không cay, nuốt được</td><td class="yes">✓</td><td class="no">✕</td></tr>
+      <tr><td>Dùng mọi lúc, mọi nơi</td><td class="yes">✓</td><td class="no">✕</td></tr>
+      <tr><td>Hương vị bé thích</td><td class="yes">✓</td><td class="no">✕</td></tr>
+      <tr><td>Không cần súc lại</td><td class="yes">✓</td><td class="no">✕</td></tr>
+      <tr><td>Hỗ trợ ngừa sâu răng</td><td class="yes">✓</td><td>Tùy</td></tr>
+    </table>
+  </section>
+
+  <!-- THÀNH PHẦN -->
+  <section class="band band-ing">
+    <h2 class="sec">Thành phần <span>lành tính</span></h2>
+    <p class="sub">An toàn - Hiệu quả - Thảo dược tự nhiên</p>
+    <div class="feats">
+      <div class="feat"><div class="ic">🌿</div><div class="t">Chiết xuất trà xanh</div><div class="d">Kháng khuẩn, chống viêm, bảo vệ răng miệng</div></div>
+      <div class="feat"><div class="ic">🧬</div><div class="t">Bột Postbiotic</div><div class="d">Cân bằng hệ vi sinh, ức chế vi khuẩn gây sâu răng</div></div>
+      <div class="feat"><div class="ic">🛡️</div><div class="t">NaF (Fluoride)</div><div class="d">Bảo vệ men răng, phòng ngừa sâu răng hiệu quả</div></div>
+      <div class="feat"><div class="ic">🍬</div><div class="t">Xylitol</div><div class="d">Hỗ trợ giảm hôi miệng, chăm sóc răng miệng</div></div>
+    </div>
+    <div class="info" style="margin-top:12px">
+      <div class="row"><div class="k">Thành phần đầy đủ</div><div>Chiết xuất trà xanh, Bột Postbiotic, NaF, Xylitol, Glycerin, PEG-40 Hydrogenated Castor Oil, Tinh dầu hương nhu tía, Natri benzoate, EDTA, Hương dâu/hương nho, Nước tinh khiết vừa đủ.</div></div>
+    </div>
+
+  </section>
+
+  <!-- INFO BLOCK -->
+  <section class="band band-info">
+    <h2 class="sec">Thông tin <span>sản phẩm</span></h2>
+    <div class="info">
+      <div class="row"><div class="k">Tên sản phẩm</div><div>Xịt răng miệng Meyem Dentikid</div></div>
+      <div class="row"><div class="k">Dung tích</div><div>30ml / chai</div></div>
+      <div class="row"><div class="k">Đối tượng</div><div>Trẻ từ 1 tuổi trở lên &amp; cả gia đình</div></div>
+      <div class="row"><div class="k">Hương vị</div><div>Hương nho tự nhiên, không cay, không cồn</div></div>
+      <div class="row"><div class="k">Thương hiệu</div><div>Meyem - Health Assurance Care</div></div>
+    </div>
+
+  </section>
+
+  <!-- CÁCH DÙNG -->
+  <section class="band band-use">
+    <h2 class="sec">Cách dùng <span>&amp; bảo quản</span></h2>
+    <div class="info">
+      <div class="row"><div class="k">Người lớn</div><div>Xịt 3-4 lần/ngày. Có thể dùng sau mỗi 2 giờ khi cần.</div></div>
+      <div class="row"><div class="k">Trẻ từ 1 tuổi</div><div>Xịt 1-2 lần theo hướng dẫn của dược sĩ hoặc bác sĩ chuyên môn.</div></div>
+      <div class="row"><div class="k">Trẻ dưới 1 tuổi</div><div>Sử dụng theo chỉ định của bác sĩ hoặc chuyên gia y tế.</div></div>
+      <div class="row"><div class="k">Bảo quản</div><div>Nơi khô ráo, thoáng mát, tránh ánh nắng. Đậy kín nắp, nhiệt độ ≤ 30°C.</div></div>
+    </div>
+
+  </section>
+
+  <!-- VIDEO REVIEW -->
+  <section class="band band-video">
+    <h2 class="sec">Video <span>review sản phẩm</span></h2>
+    <p class="sub">Trải nghiệm thực tế của mẹ và bé</p>
+    <div class="video-box">
+      <video controls preload="metadata" playsinline poster="img/anhchinh.jpg">
+        <source src="img/review.mp4" type="video/mp4">
+        Trình duyệt của bạn không hỗ trợ phát video.
+      </video>
+    </div>
+    <p class="video-cap">▶ Nhấn để xem bé dùng Meyem Dentikid</p>
+  </section>
+
+  <!-- COMBO -->
+  <section class="band band-combo">
+    <h2 class="sec">Chọn <span>combo tiết kiệm</span></h2>
+    <p class="sub">Mua càng nhiều, giá càng tốt + freeship</p>
+
+    <div class="combo">
+      <h3>🎁 Combo 1 — Dùng thử</h3>
+      <div class="cp"><span class="n">139.000đ</span><span class="o">200.000đ</span></div>
+      <ul><li>01 chai xịt chống sâu răng</li><li>Phí ship: 10.000đ</li></ul>
+      <a href="#order" class="btn btn-cta" style="padding:12px;font-size:16px">Chọn combo này</a>
+    </div>
+
+    <div class="combo hot">
+      <span class="flag">⭐ BÁN CHẠY NHẤT</span>
+      <h3>🎁 Combo 2 — Tiết kiệm</h3>
+      <div class="cp"><span class="n">259.000đ</span><span class="o">400.000đ</span></div>
+      <ul><li>02 chai xịt chống sâu răng</li><li>🚚 MIỄN PHÍ vận chuyển</li><li>Tiết kiệm 141.000đ</li></ul>
+      <a href="#order" class="btn btn-cta" style="padding:12px;font-size:16px">Chọn combo này</a>
+    </div>
+
+  </section>
+
+  <!-- COUNTDOWN -->
+  <section class="band band-urgency">
+    <div class="cd-wrap">
+      <div class="ttl">⏰ Ưu đãi kết thúc sau</div>
+      <div class="cd">
+        <div class="u"><b id="cd-h">00</b><span>Giờ</span></div>
+        <div class="u"><b id="cd-m">00</b><span>Phút</span></div>
+        <div class="u"><b id="cd-s">00</b><span>Giây</span></div>
+      </div>
+    </div>
+    <p class="scarce">🔥 Chỉ còn <b id="slots">38</b> suất ưu đãi cuối cùng!</p>
+
+    <!-- GUARANTEE -->
+    <h2 class="sec">Cam kết với <span>khách hàng</span></h2>
+    <div class="guar">
+      <div class="g"><div class="ic">✅</div><div class="t">Hàng chính hãng 100%</div></div>
+      <div class="g"><div class="ic">💵</div><div class="t">Kiểm tra, nhận hàng mới trả tiền (COD)</div></div>
+      <div class="g"><div class="ic">🔄</div><div class="t">Đổi trả trong 3 ngày</div></div>
+      <div class="g"><div class="ic">🚚</div><div class="t">Giao hàng toàn quốc 2-5 ngày</div></div>
+    </div>
+
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="band band-review">
+    <h2 class="sec">Mẹ bỉm <span>nói gì</span>?</h2>
+    <div class="rv-sum">
+      <div class="big">4.9/5</div>
+      <div class="stars">★★★★★</div>
+      <div style="color:var(--muted);font-size:13px">Dựa trên 700+ đánh giá</div>
+    </div>
+
+    <div class="rev">
+      <div class="top"><div class="av">H</div><div><div class="nm">Mẹ Hương</div><div class="tm">2 ngày trước</div></div></div>
+      <div class="tx">Bé nhà mình 3 tuổi, trước ghét đánh răng lắm. Giờ cứ đòi xịt vì thơm, hợp tác hẳn. Mẹ nhàn.</div>
+      <div class="tags">✓ Bé thích • ✓ Không cay • ✓ Giao nhanh</div>
+    </div>
+    <div class="rev">
+      <div class="top"><div class="av">T</div><div><div class="nm">Mẹ Thảo</div><div class="tm">5 ngày trước</div></div></div>
+      <div class="tx">Mùi trái cây dễ chịu, bé nuốt cũng không sao nên mình yên tâm. Đóng gói cẩn thận, shop tư vấn nhiệt tình.</div>
+      <div class="tags">✓ An toàn • ✓ Đóng gói kỹ • ✓ Tư vấn tốt</div>
+    </div>
+    <div class="rev">
+      <div class="top"><div class="av">L</div><div><div class="nm">Mẹ Linh</div><div class="tm">1 tuần trước</div></div></div>
+      <div class="tx">Mua combo 2 chai cho 2 bé. Dùng tiện, mang đi học cũng được. Sẽ ủng hộ tiếp.</div>
+      <div class="tags">✓ Tiện lợi • ✓ Đáng mua</div>
+    </div>
+
+    <!-- ORDER FORM -->
+    <section class="form-sec" id="order">
+      <h2>📝 ĐẶT HÀNG NGAY</h2>
+      <p class="fs-sub">Để lại thông tin, shop gọi xác nhận trong 5 phút</p>
+      <form id="orderForm">
+        <input type="text" name="name" placeholder="Họ và tên *" required>
+        <input type="tel" name="phone" placeholder="Số điện thoại *" required pattern="[0-9]{9,11}">
+        <input type="text" name="address" placeholder="Địa chỉ nhận hàng *" required>
+        <select name="combo" required>
+          <option value="">-- Chọn combo --</option>
+          <option value="combo1">Combo 1 — 01 chai (139.000đ + 10.000đ ship)</option>
+          <option value="combo2">Combo 2 — 02 chai (259.000đ) • Freeship</option>
+        </select>
+        <textarea name="note" placeholder="Ghi chú (không bắt buộc)"></textarea>
+        <button type="submit" class="btn btn-cta">🛒 CHỐT ĐƠN — THANH TOÁN KHI NHẬN HÀNG</button>
+        <p class="form-note">🔒 Thông tin của bạn được bảo mật. Giao hàng COD toàn quốc.</p>
+      </form>
+    </section>
+
+    <div class="ok-msg" id="okMsg">
+      <div class="ic">🎉</div>
+      <h3>ĐẶT HÀNG THÀNH CÔNG!</h3>
+      <p>Cảm ơn bạn. Shop sẽ gọi xác nhận trong ít phút. Hàng giao 2-5 ngày, thanh toán khi nhận.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="foot">
+    <h4>MEDI GREEN CARE</h4>
+    <p>Hotline: <a href="tel:0868685616">0868.685.616</a></p>
+    <div class="links">
+      <a href="#">Liên hệ</a>
+      <a href="#">Chính sách bảo mật</a>
+      <a href="#">Đổi trả &amp; vận chuyển</a>
+      <a href="#">Điều khoản</a>
+    </div>
+    <p style="margin-top:12px;opacity:.6;font-size:11px">* Sản phẩm không phải là thuốc, không có tác dụng thay thế thuốc chữa bệnh.</p>
+  </footer>
+
+</div>
+
+<!-- FLOATING SIDE BUTTONS -->
+<div class="float-side">
+  <a href="tel:0868685616" class="fs-call" title="Gọi ngay">📞</a>
+  <a href="https://zalo.me/0868685616" class="fs-zalo" title="Zalo">💬</a>
+  <a href="https://m.me/[MESSENGER]" class="fs-mess" title="Messenger">f</a>
+</div>
+
+<!-- FLOATING BOTTOM BAR -->
+<div class="float-bar">
+  <a href="tel:0868685616" class="fb-call">📞 Gọi</a>
+  <a href="https://zalo.me/0868685616" class="fb-zalo">💬 Zalo</a>
+  <a href="#order" class="fb-order">🛒 Đặt hàng</a>
+</div>
+
+<script>
+// Slider ảnh hero: dots theo dõi vị trí lướt
+(function(){
+  var sl=document.getElementById('heroSlider'), dw=document.getElementById('heroDots');
+  if(!sl||!dw) return;
+
+  // === DANH SÁCH ẢNH — muốn thêm/bớt chỉ sửa ở đây ===
+  var IMAGES=[
+    'anhchinh.jpg','anh2.jpg','anh3.jpg','anh4.jpg','anh5.jpg',
+    'anh6.jpg','anh7.jpg','anh8.jpg','anh9.jpg','anh10.jpg',
+    'anh11.jpg','anh12.jpg'
+  ];
+  IMAGES.forEach(function(name,i){
+    var s=document.createElement('div'); s.className='slide';
+    var img=document.createElement('img');
+    img.src='img/'+name;
+    img.alt='Meyem Dentikid - ảnh '+(i+1);
+    img.setAttribute('draggable','false');
+    img.onerror=function(){ var ph=document.createElement('div'); ph.className='ph-img'; ph.textContent='[ẢNH '+(i+1)+' – img/'+name+']'; s.replaceChild(ph,img); };
+    s.appendChild(img);
+    sl.appendChild(s);
+  });
+
+  var slides=sl.querySelectorAll('.slide');
+  if(slides.length<2){ return; }
+  slides.forEach(function(_,i){
+    var d=document.createElement('span');
+    if(i===0) d.className='on';
+    d.addEventListener('click',function(){ sl.scrollTo({left:sl.clientWidth*i,behavior:'smooth'}); });
+    dw.appendChild(d);
+  });
+  var dots=dw.querySelectorAll('span');
+  function current(){ return Math.round(sl.scrollLeft/sl.clientWidth); }
+  sl.addEventListener('scroll',function(){
+    var i=current();
+    dots.forEach(function(d,k){ d.classList.toggle('on',k===i); });
+  });
+  function go(n){
+    var i=Math.max(0,Math.min(slides.length-1,current()+n));
+    sl.scrollTo({left:sl.clientWidth*i,behavior:'smooth'});
+  }
+  var prev=document.getElementById('heroPrev'), next=document.getElementById('heroNext');
+  if(prev) prev.addEventListener('click',function(){ go(-1); });
+  if(next) next.addEventListener('click',function(){ go(1); });
+
+  // Kéo bằng chuột trên máy tính
+  var down=false, startX=0, startScroll=0, moved=false;
+  sl.addEventListener('mousedown',function(e){
+    down=true; moved=false; startX=e.pageX; startScroll=sl.scrollLeft; sl.classList.add('dragging');
+  });
+  window.addEventListener('mousemove',function(e){
+    if(!down) return;
+    var dx=e.pageX-startX;
+    if(Math.abs(dx)>3) moved=true;
+    sl.scrollLeft=startScroll-dx;
+  });
+  window.addEventListener('mouseup',function(){
+    if(!down) return;
+    down=false; sl.classList.remove('dragging');
+    // snap về slide gần nhất
+    sl.scrollTo({left:sl.clientWidth*current(),behavior:'smooth'});
+  });
+  // chặn kéo ảnh mặc định của trình duyệt
+  sl.querySelectorAll('img').forEach(function(im){ im.setAttribute('draggable','false'); });
+  sl.addEventListener('click',function(e){ if(moved){ e.preventDefault(); } },true);
+})();
+
+// Đếm ngược: reset về 2 giờ mỗi lần tải, lưu trong phiên
+(function(){
+  var KEY='xsr_deadline';
+  var dl=sessionStorage.getItem(KEY);
+  if(!dl){ dl=Date.now()+2*60*60*1000; sessionStorage.setItem(KEY,dl); }
+  dl=parseInt(dl,10);
+  var h=document.getElementById('cd-h'),m=document.getElementById('cd-m'),s=document.getElementById('cd-s');
+  function pad(n){return n<10?'0'+n:''+n;}
+  function tick(){
+    var d=dl-Date.now();
+    if(d<=0){ dl=Date.now()+2*60*60*1000; sessionStorage.setItem(KEY,dl); d=dl-Date.now(); }
+    var hh=Math.floor(d/3600000), mm=Math.floor(d%3600000/60000), ss=Math.floor(d%60000/1000);
+    h.textContent=pad(hh); m.textContent=pad(mm); s.textContent=pad(ss);
+  }
+  tick(); setInterval(tick,1000);
+})();
+
+// Số suất giảm dần nhẹ cho sinh động
+(function(){
+  var el=document.getElementById('slots');
+  setInterval(function(){
+    var n=parseInt(el.textContent,10);
+    if(n>12 && Math.random()<0.3){ el.textContent=n-1; }
+  },15000);
+})();
+
+// Xử lý form đặt hàng
+document.getElementById('orderForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  var f=e.target;
+  var data={
+    name:f.name.value.trim(),
+    phone:f.phone.value.trim(),
+    address:f.address.value.trim(),
+    combo:f.combo.value,
+    note:f.note.value.trim()
+  };
+  // ===== DÁN LINK GOOGLE APPS SCRIPT (/exec) VÀO ĐÂY =====
+  var SHEET_URL='https://script.google.com/macros/s/AKfycbyxmh05ZDXKjWgBVuA5pM8FLjaAhi-ZTPQ-aWpe8tDZo0lkHOg1R6GBJTj6ILq8_ipzQg/exec';
+  // =========================================================
+
+  var btn=f.querySelector('button[type=submit]');
+  var oldLabel=btn.textContent;
+  btn.disabled=true; btn.textContent='Đang gửi...';
+
+  function showThanks(){
+    f.style.display='none';
+    document.querySelector('.form-sec h2').style.display='none';
+    document.querySelector('.form-sec .fs-sub').style.display='none';
+    var ok=document.getElementById('okMsg');
+    ok.style.display='block';
+    ok.scrollIntoView({behavior:'smooth',block:'center'});
+  }
+
+  data.time=new Date().toLocaleString('vi-VN');
+  data.product='Meyem Dentikid';
+
+  if(SHEET_URL){
+    // Gửi về Google Sheet. Dùng no-cors nên không đọc được phản hồi,
+    // coi như thành công nếu không có lỗi mạng.
+    fetch(SHEET_URL,{
+      method:'POST',
+      mode:'no-cors',
+      headers:{'Content-Type':'text/plain;charset=utf-8'},
+      body:JSON.stringify(data)
+    }).then(function(){ showThanks(); })
+      .catch(function(){
+        alert('Có lỗi khi gửi đơn. Vui lòng gọi hotline để đặt hàng giúp bạn nhé!');
+        btn.disabled=false; btn.textContent=oldLabel;
+      });
+  } else {
+    // Chưa cấu hình SHEET_URL: vẫn hiện cảm ơn, log ra console để kiểm tra.
+    console.log('ĐƠN HÀNG MỚI (chưa nối Sheet):',data);
+    showThanks();
+  }
+});
+</script>
+</body>
+</html>
